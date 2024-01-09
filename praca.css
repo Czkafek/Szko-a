@@ -22,7 +22,7 @@ body {
 img {
     position: fixed;
     top: 0px;
-    backdrop-filter: blur(10px);
+    width: 100%;
 }
 .main {
     z-index: 200;
