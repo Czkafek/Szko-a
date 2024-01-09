@@ -1,0 +1,22 @@
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 300px;
+}
+input {
+    font-size: 200px;
+}
+label {
+    font-size: 20px;
+}
+textarea.a {
+    width: 350px;
+    height: 100px;
+}
+fieldset {
+    width: 60%;
+}
+select {
+    padding-right: 100px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>Formularze</title>
+        <link rel=”stylesheet” href=”lekcja.css”>
+        <style>
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        input {
+            font-size: 20px;
+        }
+        label {
+            font-size: 20px;
+        }
+        textarea.a {
+            width: 350px;
+            height: 100px;
+        }
+        fieldset {
+            width: 60%;
+        }
+        select {
+            padding-right: 100px;
+        }
+        legend {
+            font-size: 25px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Formularze w HTML</h1>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h2>Formularz z polami tekstowymi</h2>
+        <form action="" method="">
+            <fieldset>
+                <legend>Pola tekstowe</legend>
+                <label for="1">Pole1</label>
+                <input type="text" id="1"><br>
+                <label for="2">Pole2</label>
+                <input type="text" id="2"><br>
+                <label for="3">Pole3</label>
+                <input type="text" id="3"><br>
+                <label for="4">Pole4</label>
+                <input type="text" id="4"><br><br>
+                <label for="5">Pole5 typu textarea</label><br>
+                <textarea id="5" cols="40" rows="5"></textarea><br><br>
+                <label for="6">Pole6 typu textarea</label><br>
+                <textarea class="a" id="6" cols="40" rows="5"></textarea><br><br>
+                <input type="submit" value="Wyślij">
+            </fieldset>
+        </form>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h2>Formularz z polami wyboru radio</h2>
+        <form>
+            <fieldset>
+                <legend>Pole wyboru radio</legend>
+                <label for="1">Radio1</label>
+                <input id="1" name="r" value="1" type="radio"><br>
+                <label for="2">Radio2</label>
+                <input id="2" name="r" value="2" type="radio"><br>
+                <label for="3">Radio3</label>
+                <input id="3" name="r" value="3" type="radio"><br>
+                <label for="4">Radio4</label>
+                <input id="4" name="r" value="4" type="radio"><br><br>
+                <input type="submit" value="Wyślij">
+            </fieldset>
+        </form>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h2>Formularz z polami wyboru checkbox</h2>
+        <form>
+            <fieldset>
+                <legend>Pole wyboru checkbox</legend>
+                <input id="1" type="checkbox">
+                <label for="1">Checkbox1</label><br>
+                <input id="2" type="checkbox">
+                <label for="2">Checkbox2</label><br>
+                <input id="3" type="checkbox">
+                <label for="3">Checkbox3</label><br>
+                <input id="4" type="checkbox">
+                <label for="4">Checkbox4</label><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h2>Formularz z polem tekstowym z atrybutami</h2>
+        <form>
+            <fieldset>
+                <legend>Pole tekstowe z atrybutami</legend>
+                <label for="1">Imię</label>
+                <input type="text" id="1" size="25px" maxlength="5"><br>
+                <label for="2">Nazwisko</label>
+                <input type="text" id="2" placeholder="Jurek"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h2>Lista rozwijana</h2>
+        <form>
+            <fieldset>
+                <legend>Lista rozwijana</legend>
+                <label for="auta">Wskaż markę auta</label><br>
+                <select name="auta">
+                    <option>BMW</option>
+                    <option>Mercedes</option>
+                    <option selected>Porsche</option>
+                    <option>Syrenka</option>
+                    <option>Skoda</option>
+                </select>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h2>Pola specjalistyczne</h2>
+        <form>
+            <fieldset>
+                <legend>Pole daty</legend>
+                <label for="ur">Wskaż datę</label><br>
+                <input type="date" name="ur">
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Pole daty od do</legend>
+                <label for="poczatek">Wskaż początek pracy</label><br>
+                <input type="date" name="poczatek" min="1980-01-01"><br>
+                <label for="koniec">Wskaż koniec pracy</label><br>
+                <input type="date" name="koniec" max="2025-01-01"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Pole miesiąca</legend>
+                <label for="miesiac">Wskaż miesiąc</label><br>
+                <input type="month" name="miesiac"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Pole mailowe</legend>
+                <label for="mail">Podaj mail</label><br>
+                <input type="mail" name="mail"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Pole liczbowe</legend>
+                <label for="number">Podaj liczbę od -4 do 10</label><br>
+                <input type="number" name="number" min="-4" max="10"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Pole koloru</legend>
+                <label for="color">Wybierz kolor</label><br>
+                <input type="color" name="color"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Pole zasięgu</legend>
+                <label for="range">Podaj zasięg</label><br>
+                <input type="range" name="range"><br><br>
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść formularz">
+            </fieldset>
+        </form>
+        <br><br>
+        
+    </body>
+</html>
