@@ -14,6 +14,7 @@
     <body>
         <div class="cover"></div>
         <img src="back-img.webp">
+        <div id="dane-osobowe"></div>
         <div class="main">
             <fieldset>
                 <legend>Dane osobowe</legend>
@@ -32,15 +33,20 @@
                     </div>
                     <div class="dane-osobowe-input">
                         <label for="imie">Płeć:</label><br>
-                        <input type="text" id="imie">
+                        <div class="plec-div">
+                            <label for="male">Mężczyzna</label>
+                            <input type="radio" id="male" name="plec">
+                            <label for="female">Kobieta</label>
+                            <input type="radio" id="female" name="plec">
+                        </div>
                     </div>
                     <div class="dane-osobowe-input">
                         <label for="imie">Nr. telefonu:</label><br>
-                        <input type="text" id="imie">
+                        <input type="tel" id="imie">
                     </div>
                     <div class="dane-osobowe-input">
                         <label for="imie">Email:</label><br>
-                        <input type="text" id="imie">
+                        <input type="email" id="imie">
                     </div>
                     <div class="dane-osobowe-input">
                         <label for="imie">Miejscowość:</label><br>
@@ -52,7 +58,7 @@
                     </div>
                     <div class="dane-osobowe-input">
                         <label for="imie">Nr. mieszkania:</label><br>
-                        <input type="text" id="imie" placeholder="Opcjonalne">
+                        <input type="number" id="imie" placeholder="Opcjonalne">
                     </div>
                     <div class="dane-osobowe-input">
                         <label for="imie">Kod pocztowy:</label><br>
@@ -105,8 +111,8 @@
                         <label for="imie">Imię:</label><br>
                         <input type="text" id="imie">
                     </div>
-                    <div class="end-button">
-                        <input type="submit" value="Zakończ ankietę"></button>
+                    <div class="end">
+                        <input class="zakoncz-ankiete-button" type="submit" value="Zakończ ankietę"></button>
                     </div>
                     <div class="warning">
                         *Po kliknięciu tego przycisku ankieta łącznie z danymi osobowymi zostanie wysłana i nie będzie już można cofnąć odpowiedzi
@@ -114,5 +120,6 @@
                 </form>
             </fieldset>
         </div>
+        <button class="skocz"><a href="#dane-osobowe" >skocz</a></button>
     </body>
 </html>

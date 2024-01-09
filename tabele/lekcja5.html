@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        h1 {
+            font-size: 60px;
+        }
+        thead, tfoot {
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+        tfoot {
+            color:rgb(255, 255, 255);
+            background-color: black;
+        }
+        table {
+            width: 300px;   
+            /* border-collapse: collapse; likwiduje domyślne podwójne obramowanie */
+        }
+        td {
+            text-align: center;
+        }
+        table, td {
+            padding: 30px; /* margines wewnętrzny */
+            padding-bottom: 40px; /* margines wewnętrzny dolny */
+            border-spacing: 20px; /* margines wewnętrzny dolny */
+            font-size: 50px;
+            border: 5px solid black;
+            /*background-color: antiquewhite;*/
+        }
+        /*pseudoelement/pseudoklasa*/
+        /*zmiana wyglądu wierszy parzystych i nieparzystych*/
+        tr:nth-child(even) {
+            color: rgb(255, 0, 0);
+            background-color: aquamarine;
+        }
+        tr:nth-child(odd) {
+            color: rgb(0, 217, 255);
+            background-color: rgb(118, 19, 128);
+        }
+        td:nth-child(even) {
+            color: rgb(90, 8, 8);
+            background-color: rgb(22, 36, 230);
+        }
+        /*pseudoklasa hover*/
+        tr:hover {
+            color: rgb(153, 165, 42);
+            background-color: rgb(39, 72, 100);
+            font-weight: bolder;
+            font-size: larger;
+        }
+        td:hover {
+            color: rgb(165, 101, 42);
+            background-color: rgb(45, 39, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <thead><th>li</th> <th>cz</th> <th>b</th> <th>y</th></thead> 
+        <tr><td colspan="2">0</td> <td>1</td> <td>2</td> </tr>
+        <tr><td rowspan="3">1</td> <td>1</td> <td>2</td> <td>3</td></tr>
+        <tr><td>2</td> <td>2</td> <td>4</td> </tr>
+        <tr><td>3</td> <td>3</td> <td>6</td> <</tr>
+        <tfoot><th>li</th> <th>cz</th> <th>b</th> <th>y</th></tfoot>
+    </table>
+</body>
+</html>
