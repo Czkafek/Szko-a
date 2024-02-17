@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="praca.css">
+
+        <title>Zadowolenie z miejsca zamieszkania</title>
+    </head>
+    <body>
+
+        <!-- Użyłem w ankiecie tylko 2 typy inputu tzn. radio i checkbox bo 4 odpowiedzi musiały być i jakby tylko one pozwalają na taki typ odpowiedzi-->
+
+        <div class="img-div">
+            <img src="white-wallpaper.png">
+        </div>
+        <div class="main">
+            <div class="dane-osobowe-img">
+                <img src="survey-testing.png" alt="">
+            </div>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <form>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Imię:</label><br>
+                        <input type="text" id="imie">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Nazwisko:</label><br>
+                        <input type="text" id="imie">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="date">Data urodzenia:</label><br>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Płeć:</label><br>
+                        <div class="plec-div">
+                            <label for="male">Mężczyzna</label>
+                            <input type="radio" id="male" name="plec">
+                            <label for="female">Kobieta</label>
+                            <input type="radio" id="female" name="plec">
+                        </div>
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Nr. telefonu:</label><br>
+                        <input type="tel" id="imie">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Email:</label><br>
+                        <input type="email" id="imie">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Miejscowość:</label><br>
+                        <input type="text" id="imie">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Ulica:</label><br>
+                        <input type="text" id="imie">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Nr. mieszkania:</label><br>
+                        <input type="number" id="imie" placeholder="Opcjonalne">
+                    </div>
+                    <div class="dane-osobowe-input">
+                        <label for="imie">Kod pocztowy:</label><br>
+                        <input type="text" id="imie">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <div class="main">
+            <fieldset>
+                <legend>Ankieta</legend>
+                <form>
+                    <div class="form-input">
+                        <label for="imie">1. Jak oceniasz ogólną jakość życia w swoim miejscu zamieszkania?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="jakoscSlaba" name="jakosc">
+                            <label for="jakoscSlaba">Słaba</label>
+                            <input type="radio" id="jakoscSrednia" name="jakosc">
+                            <label for="jakoscSrednia">Średnia</label>
+                            <input type="radio" id="jakoscDobra" name="jakosc">
+                            <label for="jakoscDobra">Dobra</label>
+                            <input type="radio" id="jakoscBardzoDobra" name="jakosc">
+                            <label for="jakoscBardzoDobra">Bardzo dobra</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">2. Czy uważasz, że twoje miejsce zamieszkania spełnia oczekiwania pod względem bezpieczeństwa?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="nie-bezpieczenstwo" name="bezpieczenstwo">
+                            <label for="nie-bezpieczenstwo">Nie</label>
+                            <input type="radio" id="srednio-bezpieczenstwo" name="bezpieczenstwo">
+                            <label for="srednio-bezpieczenstwo">Średnio</label>
+                            <input type="radio" id="tak-bezpieczenstwo" name="bezpieczenstwo">
+                            <label for="tak-bezpieczenstwo">Tak</label>
+                        </div>
+                        <div class="add-answer">
+                            <label for="tak-bezpieczenstwo">Odpowiedź własna:</label>
+                            <input type="text" id="tak-bezpieczenstwo" name="bezpieczenstwo" placeholder="Opcjonalne">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">3. Co uważasz za największy atut swojego miejsca zamieszkania?</label><br>
+                        <div class="answers">
+                            <input type="checkbox" id="infra-atut" name="atut">
+                            <label for="infra-atut"> Infrastruktura publiczna</label>
+                            <input type="checkbox" id="bezpie-atut" name="atut">
+                            <label for="bezpie-atut">Bezpieczeństwo</label><br> <!-- Już mam dość, mogłem tu zrobić dwa razy div z flexem, aby przerwa między odp była równa, ale chyba będzie git-->
+                            <input type="checkbox" id="przyj-atut" name="atut">
+                            <label for="przyj-atut">Przyjazność społeczności</label>
+                            <input type="checkbox" id="dost-atut" name="atut">
+                            <label for="dost-atut">Dostęp do rekreacji i kultury </label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">4. Jak oceniasz dostępność usług edukacyjnych w swojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-szkol" name="edukacja">
+                            <label for="bardzo-szkol">Bardzo dobrze</label>
+                            <input type="radio" id="dobrze-szkol" name="edukacja">
+                            <label for="dobrze-szkol">Dobrze</label>
+                            <input type="radio" id="srednio-szkol" name="edukacja">
+                            <label for="srednio-szkol">Średnio</label>
+                            <input type="radio" id="zle-szkol" name="edukacja">
+                            <label for="zle-szkol">Źle</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">5. Czy czujesz, że twoja okolica jest zielona i oferuje otwarte przestrzenie?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-zielono" name="zielonosc">
+                            <label for="bardzo-zielono">Tak, bardzo</label>
+                            <input type="radio" id="tak-zielono" name="zielonosc">
+                            <label for="tak-zielono">Tak, ale mogłoby być lepiej</label><br> <!-- same -->
+                            <input type="radio" id="niezbyt-zielono" name="zielonosc">
+                            <label for="niezbyt-zielono">Niezbyt</label>
+                            <input type="radio" id="nie-zielono" name="zielonosc">
+                            <label for="nie-zielono">Absolutnie nie</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">6. Jak oceniasz dostępność środków transportu publicznego w twojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-transport" name="transport">
+                            <label for="bardzo-transport">Bardzo dobra</label>
+                            <input type="radio" id="dobrze-transport" name="transport">
+                            <label for="dobrze-transport">Dobra</label>
+                            <input type="radio" id="srednio-transport" name="transport">
+                            <label for="srednio-transport">Umiarkowana</label>
+                            <input type="radio" id="zle-transport" name="transport">
+                            <label for="zle-transport">Zła</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">7. Czy uważasz, że lokalne władze są skuteczne w rozwiązywaniu problemów społecznych w twojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-wladza" name="wladza">
+                            <label for="bardzo-wladza">Bardzo skuteczne</label>
+                            <input type="radio" id="dobrze-wladza" name="wladza">
+                            <label for="dobrze-wladza">Skuteczne</label><br>
+                            <input type="radio" id="srednio-wladza" name="wladza">
+                            <label for="srednio-wladza">Nieskuteczne</label>
+                            <input type="radio" id="zle-wladza" name="wladza">
+                            <label for="zle-wladza">Bardzo nieskuteczne</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">8. Czy jesteś zadowolony/zadowolona z dostępu do miejsc pracy w swoim regionie?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-edukacja" name="edukacja">
+                            <label for="bardzo-edukacja">Bardzo zadowolony/zadowolona</label><br>
+                            <input type="radio" id="dobrze-edukacja" name="edukacja">
+                            <label for="dobrze-edukacja">Zadowolony/zadowolona</label><br>
+                            <input type="radio" id="srednio-edukacja" name="edukacja">
+                            <label for="srednio-edukacja"> Trochę niezadowolony/niezadowolona</label><br>
+                            <input type="radio" id="zle-edukacja" name="edukacja">
+                            <label for="zle-edukacja">Bardzo niezadowolony/niezadowolona</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">9. Jak oceniasz stan infrastruktury sportowej w twojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-infra-sport" name="infra-sport">
+                            <label for="bardzo-infra-sport">Bardzo dobrze</label>
+                            <input type="radio" id="dobrze-infra-sport" name="infra-sport">
+                            <label for="dobrze-infra-sport">Dobrze</label>
+                            <input type="radio" id="srednio-infra-sport" name="infra-sport">
+                            <label for="srednio-infra-sport"> Umiarkowanie</label>
+                            <input type="radio" id="zle-infra-sport" name="infra-sport">
+                            <label for="zle-infra-sport">Źle</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">10. Czy czujesz się bezpieczny/bezpieczna spacerując po swojej okolicy po zmroku?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-spacer-po-zmroku" name="spacer-po-zmroku">
+                            <label for="bardzo-spacer-po-zmroku">Zawsze</label>
+                            <input type="radio" id="dobrze-spacer-po-zmroku" name="spacer-po-zmroku">
+                            <label for="dobrze-spacer-po-zmroku">Często</label>
+                            <input type="radio" id="srednio-spacer-po-zmroku" name="spacer-po-zmroku">
+                            <label for="srednio-spacer-po-zmroku">Rzadko</label>
+                            <input type="radio" id="zle-spacer-po-zmroku" name="spacer-po-zmroku">
+                            <label for="zle-spacer-po-zmroku">Nigdy</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">11. Czy istnieją konkretne problemy środowiskowe w twojej okolicy, które wpływają na twoje zadowolenie?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-problemy-srod" name="problemy-srod">
+                            <label for="bardzo-problemy-srod">Tak, i są rozwiązywane</label>
+                            <input type="radio" id="dobrze-problemy-srod" name="problemy-srod">
+                            <label for="dobrze-problemy-srod"> Tak, ale nie są rozwiązywane</label><br>
+                            <input type="radio" id="srednio-problemy-srod" name="problemy-srod">
+                            <label for="srednio-problemy-srod">Nie, nie zauważyłem/zauważyłam</label>
+                            <input type="radio" id="zle-problemy-srod" name="problemy-srod">
+                            <label for="zle-problemy-srod">Nie, ale mogłyby się pojawić</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">12. Jak oceniasz dostępność opieki zdrowotnej w swojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-opieka-zdrowotna" name="opieka-zdrowotna">
+                            <label for="bardzo-opieka-zdrowotna">Bardzo dobrze</label>
+                            <input type="radio" id="dobrze-opieka-zdrowotna" name="opieka-zdrowotna">
+                            <label for="dobrze-opieka-zdrowotna">Dobrze</label>
+                            <input type="radio" id="srednio-opieka-zdrowotna" name="opieka-zdrowotna">
+                            <label for="srednio-opieka-zdrowotna">Umiarkowanie</label>
+                            <input type="radio" id="zle-opieka-zdrowotna" name="opieka-zdrowotna">
+                            <label for="zle-opieka-zdrowotna">Źle</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">13. Czy czujesz, że masz wpływ na decyzje podejmowane dotyczące twojego regionu/miasta?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-decyzje" name="decyzje">
+                            <label for="bardzo-decyzje">Tak, zdecydowanie</label>
+                            <input type="radio" id="dobrze-decyzje" name="decyzje">
+                            <label for="dobrze-decyzje">Tak, ale ograniczony</label><br>
+                            <input type="radio" id="srednio-decyzje" name="decyzje">
+                            <label for="srednio-decyzje">Nie wiem</label>
+                            <input type="radio" id="niewogole" name="decyzje">
+                            <label for="niewogole">Nie, w ogóle</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">14. Jak oceniasz dostępność miejsc kulturalnych, takich jak teatry, muzea czy galerie sztuki?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-miejsca-kulturalne" name="miejsca-kulturalne">
+                            <label for="bardzo-miejsca-kulturalne">Bardzo dobrze</label>
+                            <input type="radio" id="dobrze-miejsca-kulturalne" name="miejsca-kulturalne">
+                            <label for="dobrze-miejsca-kulturalne">Dobrze</label>
+                            <input type="radio" id="srednio-miejsca-kulturalne" name="miejsca-kulturalne">
+                            <label for="srednio-miejsca-kulturalne">Umiarkowanie</label>
+                            <input type="radio" id="zle-miejsca-kulturalne" name="miejsca-kulturalne">
+                            <label for="zle-miejsca-kulturalne">Źle</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">15. Czy czujesz, że masz wystarczająco dużo możliwości rozwoju kulturowego i rekreacyjnego?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-mozliwosci" name="mozliwosci">
+                            <label for="bardzo-mozliwosci">Tak, zdecydowanie</label>
+                            <input type="radio" id="dobrze-mozliwosci" name="mozliwosci">
+                            <label for="dobrze-mozliwosci">Tak, ale mogłoby być lepiej</label>
+                            <input type="radio" id="srednio-mozliwosci" name="mozliwosci">
+                            <label for="srednio-mozliwosci">ŚreNiezbytdnio</label>
+                            <input type="radio" id="zle-mozliwosci" name="mozliwosci">
+                            <label for="zle-mozliwosci">Absolutnie  nie</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">16. Czy widzisz potrzebę poprawy jakości usług publicznych w twojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-uslug-publiczne" name="uslug-publiczne">
+                            <label for="bardzo-uslug-publiczne">Tak, pilnie</label>
+                            <input type="radio" id="dobrze-uslug-publiczne" name="uslug-publiczne">
+                            <label for="dobrze-uslug-publiczne">Tak, ale stopniowo</label>
+                            <input type="radio" id="srednio-uslug-publiczne" name="uslug-publiczne">
+                            <label for="srednio-uslug-publiczne">Nie wiem</label>
+                            <input type="radio" id="zle-uslug-publiczne" name="uslug-publiczne">
+                            <label for="zle-uslug-publiczne">Nie, są w porządku</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">17. Jak oceniasz stan czystości i utrzymania porządku w twojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-stan-czystosci" name="stan-czystosci">
+                            <label for="bardzo-stan-czystosci">Bardzo dobrze</label>
+                            <input type="radio" id="dobrze-stan-czystosci" name="stan-czystosci">
+                            <label for="dobrze-stan-czystosci">Dobrze</label>
+                            <input type="radio" id="srednio-stan-czystosci" name="stan-czystosci">
+                            <label for="srednio-stan-czystosci">Średnio</label>
+                            <input type="radio" id="zle-stan-czystosci" name="stan-czystosci">
+                            <label for="zle-stan-czystosci">Źle</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">18. Czy zauważyłeś/zauważyłaś jakiekolwiek zmiany w swoim regionie w ciągu ostatnich kilku lat?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-zmiany" name="zmiany">
+                            <label for="bardzo-zmiany">Tak, pozytywne zmiany</label>
+                            <input type="radio" id="dobrze-zmiany" name="zmiany">
+                            <label for="dobrze-zmiany">Tak, ale mieszane</label>
+                            <input type="radio" id="srednio-zmiany" name="zmiany">
+                            <label for="srednio-zmiany">Nie, żadnych znaczących zmian</label>
+                            <input type="radio" id="zle-zmiany" name="zmiany">
+                            <label for="zle-zmiany">Tak, negatywne zmiany</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">19. Czy istnieją obszary, w których twoje miejsce zamieszkania mogłoby się poprawić z punktu widzenia zrównoważonego rozwoju?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-obszary" name="obszary">
+                            <label for="bardzo-obszary">Tak, wiele obszarów</label>
+                            <input type="radio" id="dobrze-obszary" name="obszary">
+                            <label for="dobrze-obszary">Tak, kilka obszarów</label>
+                            <input type="radio" id="srednio-obszary" name="obszary">
+                            <label for="srednio-obszary">Nie, wszystko jest w porządku</label>
+                            <input type="radio" id="zle-obszary" name="obszary">
+                            <label for="zle-obszary">Nie wiem</label>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="imie">20. Jak oceniasz ogólną dostępność usług publicznych w swojej okolicy?</label><br>
+                        <div class="answers">
+                            <input type="radio" id="bardzo-dostep-uslug-publicznych" name="dostep-uslug-publicznych">
+                            <label for="bardzo-dostep-uslug-publicznych">Bardzo dobra</label>
+                            <input type="radio" id="dobrze-dostep-uslug-publicznych" name="dostep-uslug-publicznych">
+                            <label for="dobrze-dostep-uslug-publicznych">Dobra</label>
+                            <input type="radio" id="srednio-dostep-uslug-publicznych" name="dostep-uslug-publicznych">
+                            <label for="srednio-dostep-uslug-publicznych">Umiarkowana</label>
+                            <input type="radio" id="zle-dostep-uslug-publicznych" name="dostep-uslug-publicznych">
+                            <label for="zle-dostep-uslug-publicznych">Zła</label>
+                        </div>
+                    </div>
+                    
+                    <div class="end">
+                        <input class="zakoncz-ankiete-button" type="submit" value="Zakończ ankietę"></button>
+                    </div>
+                    <div class="warning">
+                        *Po kliknięciu tego przycisku ankieta łącznie z danymi osobowymi zostanie wysłana i nie będzie już można cofnąć odpowiedzi
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

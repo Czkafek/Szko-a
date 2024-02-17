@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    background-color: #9e9e9e;
+    height: 40px;
+    font-size: 2rem;
+}
+
+nav {
+    height: 300px;
+    width: 20%;
+    background-color: #c9c9c9;
+    font-size: 1.5rem;
+    float: left;
+}
+
+section {
+    width: 60%;
+    height: 300px;
+    background-color: #b6b6b6;
+    font-size: 1.5rem;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    height: 300px;
+    background-color: #c9c9c9;
+    font-size: 1.5rem;
+    float: left;
+}
+
+aside::after {
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: rgb(138, 138, 138);
+    font-size: 2rem;
+}

@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    font-family: roboto, arial;
+    height: 2000px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    position: fixed;
+    width: 9%;
+    height: 13rem;
+    background-color: rgb(41, 41, 41);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 15%;
+}
+nav li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+main {
+    color: rgb(20, 20, 20);
+    padding: 2% 9% 0% 11%;
+}
+
+section {
+    margin: auto;
+    width: 80%;
+}
+section h1 {
+    font-size: 5rem;
+    margin: 0px;
+    font-weight: 600;
+}
+p {
+    font-size: 1.5rem;
+    margin: 0px;
+    font-weight: 300;
+    padding-bottom: 3%;
+}
+b {
+    font-size: 2rem;
+}
+
+.preview {
+    width: 25.6%;
+    margin-left: 10.5rem;
+    padding-bottom: 3%;
+}
+.preview-photos {
+    display: flex;
+    height: 20rem;
+    column-gap: 1rem;
+    margin: 0px;
+}
+.preview-photos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.preview-title p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+li {
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0px;
+    font-size: 2.2rem;
+    padding: 0px;
+    font-weight: 300;
+}
+li:hover {
+    opacity: 0.5;
+}
+
+section a {
+    font-weight: 400;
+    text-decoration: underline;
+    color: rgb(20, 20, 20);
+    transition: opacity 0.15s;
+}
+section a:hover {
+    opacity: 0.7;
+}
+
+
+
+.oferta-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.oferta {
+    flex: 1;
+    height: 500px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 0rem 0rem;
+}
+.oferta-title p{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
